@@ -42,6 +42,7 @@ body::after {
     background: #47555E;
     justify-content: space-around;
     margin-bottom: 1px;
+    padding: 5px;
 }
 
 .btn_Contact {
@@ -70,6 +71,11 @@ body::after {
     font-size: 6px;
     text-align: center;
     border: 0.3px solid #FFFFFF;
+    padding: 5px;
+}
+
+.mentions-footer a {
+    color: #FFFFFF;
 }
 
 .mentions-title {
@@ -95,12 +101,16 @@ body::after {
 }
 
 .bloc-link {
+    display: flex;
+    flex-direction: column;
     color: #ffffff;
     border-radius: 0 10px 0 10px;
     border: 1px solid #BFBDBD;
     height: min-content;
     padding : 5px;
     align-items: center;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .logo {
@@ -127,7 +137,8 @@ body::after {
 } */
 
 .title-nav {
-    display: block;
+    display: flex;
+    flex-direction: column;
     border: 1px solid #FFFFFF;
     border-radius: 0 20px 0 20px;
     background-color: #FFFFFF;
@@ -135,10 +146,8 @@ body::after {
     width: 50%;
     padding: 10px;
     justify-content: center;
+    margin: auto;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 
 .title__colorLetter {
@@ -146,5 +155,74 @@ body::after {
 }
 
 .container-nav {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;/*pour footer fixe*/
+}
+
+/*index*/
+
+.container-index {
+    display: flex;
+    flex-grow: 1;/*pour footer fixe*/
+    flex-direction: column;
+
+}
+
+/*description*/
+
+.container-description {
+    background-image: url(../images/index/imgPresPhotographe.jpg);
+    background-size: cover;
+    display: flex;
+    flex-grow: 1;
+    margin-top: 1%;
+    padding: 1%;
+    border: 1px solid #FFFFFF;
+}
+
+.desc-content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.desc-title {
+    background-color: rgba(0,0,0,0.8);
+    width: fit-content;
+    color: #FFFFFF;
+    margin: 0 15px 20px 0;
+    border: 1px solid black;
+    border-radius: 10px 0 10px 30px;
+    padding: 5px 10px;
+}
+
+.desc-text {
+    background-color: #C3C3C3;
+    width: fit-content;
+    color: #661200;
+    margin: 5px;
+    font-size: 10px;
+    text-align: justify;
+    border: 1px solid #C3C3C3;
+    border-radius: 10px 0 10px 30px;
+    padding: 10px;
+
+}
+
+/*Liens*/
+.container-link {
+    display: flex;
+    background-image: url(../images/index/imgLienFond.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 1%;
+    border: 1px solid #FFFFFF;
+}
+
+.link-index {
+    margin: 5px;
+    padding: 8px;
 }
