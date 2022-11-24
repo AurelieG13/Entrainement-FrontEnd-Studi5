@@ -1,0 +1,150 @@
+/*Reset*/
+* {
+    margin: 0;
+}
+
+/*Polices*/
+
+html, body {
+    height: 100%;
+}
+
+body, footer, button {
+    font-family: 'Nova Mono', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body::after {
+    background-image: url(../images/logo/imgFond.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+/* a {
+    color: #FFFFFF;
+} */
+
+/*Footer*/
+
+.container-footer {
+    display: flex;
+    background: #47555E;
+    justify-content: space-around;
+    margin-bottom: 1px;
+}
+
+.btn_Contact {
+    background-color: #BFBDBD;
+    color: #005466;
+    border-radius: 0 10px 0 10px;
+    border: 1px solid #BFBDBD;
+}
+
+.socialIcon {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+}
+
+.socialItem {
+    padding: 0 10px;
+}
+
+.mentions-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: #47555E;
+    font-size: 6px;
+    text-align: center;
+    border: 0.3px solid #FFFFFF;
+}
+
+.mentions-title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.mentions-details {
+    font-size: 12px;
+    text-align: justify;
+}
+
+/*Header*/
+
+/*Navbar*/
+.side-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bloc-link {
+    color: #ffffff;
+    border-radius: 0 10px 0 10px;
+    border: 1px solid #BFBDBD;
+    height: min-content;
+    padding : 5px;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    padding-top: 10px;
+}
+
+.nav-links {
+    font-size: 12px;
+}
+
+.bgMenuGrey {
+    background-color: rgba(71, 85, 94, 0.8);
+}
+
+.bgMenuBlue {
+    background-color: rgba(0, 84, 102, 0.9);
+}
+
+/*BG img*/
+/* .container-nav {
+    background-image: url('../images/logo/imgFond.jpg');
+} */
+
+.title-nav {
+    display: block;
+    border: 1px solid #FFFFFF;
+    border-radius: 0 20px 0 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.title__colorLetter {
+    color: #005466;
+}
+
+.container-nav {
+    flex-grow: 1;/*pour footer fixe*/
+}
