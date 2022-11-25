@@ -1,0 +1,121 @@
+/*Header*/
+
+/*Navbar*/
+.side-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bloc-link {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    border-radius: 0 10px 0 10px;
+    border: 1px solid #BFBDBD;
+    height: min-content;
+    padding : 5px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    padding-top: 10px;
+}
+
+.nav-links {
+    font-size: 12px;
+}
+
+.bgMenuGrey {
+    background-color: rgba(71, 85, 94, 0.8);
+}
+
+.bgMenuBlue {
+    background-color: rgba(0, 84, 102, 0.9);
+}
+
+.bgMenuBlue.active {
+    background: #FFFFFF;
+}
+
+.bgMenuBlue.active .nav-links {
+    color:rgba(0, 84, 102, 0.9);
+    font-weight: bolder;
+}
+
+.bgMenuGrey.active {
+    color:rgba(71, 85, 94, 0.8);
+    font-weight: bolder;
+}
+
+.bgMenuGrey.active .nav-links {
+    color:rgba(71, 85, 94, 0.8);
+    font-weight: bolder;
+}
+
+.bgMenuBlue:hover, .bgMenuGrey:hover {
+    background-color: rgba(102, 18, 0, 0.5);
+}
+
+.title-nav {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FFFFFF;
+    border-radius: 0 20px 0 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.title__colorLetter {
+    color: #005466;
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;/*pour footer fixe*/
+}
+
+@media screen and (min-width: 768px) {
+    .container-nav {
+        min-height: 80%;
+    }
+    .container-nav-header {
+        min-height: 40%;
+    }
+    .nav-links {
+        font-size: 22px;
+    }
+    .bloc-link {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        border-radius: 0 10px 0 10px;
+        border: 1px solid #BFBDBD;
+        height: 50px;
+        width: auto;
+        padding : 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        width: 200px;
+        height: auto;
+        padding-top: 10px;
+    }
+    .title-nav {
+        font-size: 38px;
+    }
+    .title__colorLetter {
+        text-decoration: underline;
+    }
+}

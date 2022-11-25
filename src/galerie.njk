@@ -1,3 +1,49 @@
 ---
 layout: layout.njk
 ---
+
+<main>
+
+    {# Section 1 - Search #}
+    <section class="container-search">
+        <div>
+            <label for="input-search"></label>
+            <input type="text" placeholder="Rechercher une catégorie..." id="input-search">
+        </div>
+        <button type="button" class="btn-search">
+            <img class="img-search" src="../images/logo/loupe_blanche.png" alt="loupe recherche">
+            Rechercher</button>
+    </section>
+
+    {# Section 2 - List  #}
+    <section class="container-list">
+        <div class="container-title-list">
+            <a href="#" class="list-button">Voir toutes les photos</a>
+        </div>
+
+        <div class="container-photo-list">
+            <img src="#" alt="photo">
+        </div>
+    </section>
+
+    {# Section 3 - Categories  #}
+    <section >
+        <div class="container-title-categories">
+            <a href="#" class="categories-button">Catégories les plus recherchées</a>
+        </div>
+
+        <div class="container-categories">
+            <div class="card">
+                <img class="card-img-top" src="../images/categories/imgbebeCategorie.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Categorie</h5>
+                    <p class="card-text">Description rapide de la catégorie</p>
+                    <a href="#" class="btn btn-primary">Voir les photos</a>
+                </div>
+            </div>       
+        </div>
+
+
+    </section>
+
+</main>
