@@ -9,8 +9,8 @@ sections:
   label: photos2
   create: all
   match: "**/*"
-upload_dir: public/images/photos
-public_path: "/public/images/photos"
+upload_dir: images/photos2
+public_path: images/photos2
 front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
