@@ -24,6 +24,18 @@ layout: layout.njk
         <div class="container-photo-list">
             <img src="#" alt="photo">
         </div>
+
+
+        {# <img src="{{ '../images/photos/chaton.jpg' | url}}" alt="test image d'un chat"> #}
+        
+        <ul>
+        {% for post in collections.photos %}
+            <li><a href="{{ ../images/photos/post.url | url}}"> {{post.data.title}}</a></li>
+            {{ post.data.title}}
+        {% endfor %}
+        </ul>
+
+
     </section>
 
     {# Section 3 - Categories  #}
@@ -38,7 +50,7 @@ layout: layout.njk
                 <div class="card-body">
                     <h5 class="card-title">Categorie</h5>
                     <p class="card-text">Description rapide de la catégorie</p>
-                    <a href="#" class="btn btn-primary">Voir les photos</a>
+                    <a href="#" class="btn-card bgMenuBlue">Voir les photos</a>
                 </div>
             </div>       
         </div>

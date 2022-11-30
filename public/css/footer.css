@@ -31,12 +31,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     color: #FFFFFF;
     background: #47555E;
     font-size: 6px;
-    text-align: center;
     border: 0.3px solid #FFFFFF;
-    padding: 5px;
+    padding-bottom: 5px;
 }
 
 .mentions-footer a {

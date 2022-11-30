@@ -1,0 +1,136 @@
+/*Galerie*/
+
+.container-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Section 1 - Search*/
+
+.container-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: conic-gradient(from 180deg at 50% 50%, #FFFFFF -152.6deg,#47555E, #FFFFFF 141.7deg, #47555E,#FFFFFF 207.4deg, #47555E 501.7deg);    padding: 10px;
+    min-height: 70px;
+}
+
+#input-search{
+    font-size: 10px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 10px 0;
+    border: none;
+    padding: 10px;
+    border: 1px solid #47555E;
+    margin: 0 20px;
+    margin: 5px;
+    width: 250px;
+}
+
+.btn-search {
+    display: flex;
+    flex-direction: row;
+    background: rgba(71, 85, 94, 0.8);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 5px;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.img-search {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+}
+
+/* Section 2 - List*/
+
+.container-title-list {
+    font-size: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px 0;
+    border: none;
+    padding: 10px;
+    border: 1px solid #8E99A0;
+    text-align: center;
+    margin: 20px;
+}
+
+.list-button, .categories-button {
+    color: #47555E;
+}
+
+/* Section 3 - Categories*/
+
+.container-title-categories {
+    font-size: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px 0;
+    border: none;
+    padding: 10px;
+    border: 1px solid #8E99A0;
+    text-align: center;
+    margin: 20px;
+}
+
+/*card*/
+
+.container-categories {
+    display: flex;
+}
+
+.card {
+    padding: 3px;
+    margin: 10px;
+    text-align: justify;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 100px;
+    min-width:min-content;
+    max-height: 300px;
+    min-height:min-content;
+}
+
+.card-text {
+    font-size: 10px;
+}
+
+.btn-card {
+    display: flex;
+    font-size: 8px;
+    color: #ffffff;
+    border-radius: 0 10px 0 10px;
+    border: 1px solid #BFBDBD;
+    height: min-content;
+    padding : 5px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 14px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .container-categories {
+        flex-direction: row;
+    }
+    .container-search {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background: conic-gradient(from 180deg at 50% 50%, #FFFFFF -152.6deg,#47555E, #FFFFFF 141.7deg, #47555E,#FFFFFF 207.4deg, #47555E 501.7deg);    padding: 10px;
+        min-height: 70px;
+    }
+}
