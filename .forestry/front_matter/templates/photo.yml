@@ -1,6 +1,7 @@
 ---
 label: photo
 hide_body: false
+display_field: title
 fields:
 - name: title
   type: text
@@ -14,7 +15,8 @@ fields:
   label: upload_img
 - name: tags
   type: tag_list
-  default: []
+  default:
+  - photo
   hidden: true
   label: tags
   description: tags<br>
