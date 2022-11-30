@@ -18,22 +18,17 @@ layout: layout.njk
     {# Section 2 - List  #}
     <section class="container-list">
         <div class="container-title-list">
-            <a href="#" class="list-button">Voir toutes les photos</a>
+            <a href="#" class="list-button">Voir toutes les photos </a>
         </div>
 
         <div class="container-photo-list">
             <img src="#" alt="photo">
         </div>
-
-
-        {# <img src="{{ '../images/photos/chaton.jpg' | url}}" alt="test image d'un chat"> #}
         
-        <ul>
-        {% for post in collections.photos %}
-            <li><a href="{{ ../images/photos/post.url | url}}"> {{post.data.title}}</a></li>
-            {{ post.data.title}}
+        {% for post in collections.photo %}
+            <a href="{{ post.url | url }}">{{ post.data.title }}</a>
         {% endfor %}
-        </ul>
+
 
 
     </section>
