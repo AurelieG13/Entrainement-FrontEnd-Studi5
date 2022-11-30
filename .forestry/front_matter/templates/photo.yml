@@ -12,5 +12,9 @@ fields:
   config:
     maxSize: 64
   label: upload_img
+- name: photocollection
+  type: tag_list
+  default: []
+  label: photoCollection
 pages:
 - images/photos/test1.md
