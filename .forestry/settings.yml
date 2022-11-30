@@ -3,17 +3,7 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-sections:
-- type: directory
-  path: test456
-  label: test456
-  create: all
-  match: "**/*"
-- type: directory
-  path: images/photos
-  label: photos
-  create: all
-  match: "**/*"
+sections: 
 upload_dir: public/images/photos
 public_path: "/public/images/photos"
 front_matter_path: ''
