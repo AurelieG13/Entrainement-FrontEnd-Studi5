@@ -1,4 +1,14 @@
 ---
 label: photo
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: upload_img
+  type: file
+  config:
+    maxSize: 64
+  label: upload_img
