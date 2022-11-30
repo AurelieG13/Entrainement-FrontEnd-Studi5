@@ -19,4 +19,5 @@ fields:
   label: tags
   description: tags<br>
 pages:
+- images/photos2/testavectag.md
 - images/photos2/testphotos2article.md
