@@ -4,13 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: photo
-  label: photo
-  match: "**/*"
-  read_only: false
 - type: directory
-  path: src/images/photos
+  path: images/photos
   label: photos
   create: all
   match: "**/*"
