@@ -18,5 +18,3 @@ fields:
   hidden: true
   label: tagsPhoto
   description: tagsPhoto<br>
-pages:
-- images/photos/test1.md
