@@ -30,3 +30,5 @@ fields:
       format: markdown
   label: Description
   description: Description
+pages:
+- src/photos4/testdossphotos4.md
