@@ -23,10 +23,10 @@ layout: layout.njk
 
         <div class="container-photo-list">
             <img src="#" alt="photo">
-            {# {% include collections.photo%} #}
+            {% include collections.photo%}
         </div>
-{# 
-        {% for photo in collections.photo %}
+
+        {# {% for photo in collections.photo %}
             <div>{{ photo.upload_img }}</div> 
         {% endfor %} #}
 
@@ -51,14 +51,14 @@ layout: layout.njk
                     <a href="#" class="btn-card bgMenuBlue">Voir les photos</a>
                 </div>
             </div>       
-            {# {% macro card(title, content) %}
+        {% macro card(title, content) %}
                 <div class="card">
                 <h2>{{ title }}</h2>
                 <p>{{ content }}</p>
                 </div>
         {% endmacro %}
 
-        {{ card('My Module', 'Lorem ipsum whatever.') }} #}
+        {{ card('My Module', 'Lorem ipsum whatever.') }}
         </div>
 
 
