@@ -9,8 +9,8 @@ sections:
   label: Photos4
   create: all
   match: "**/*"
-upload_dir: images/photos3
-public_path: images/photos3
+upload_dir: src/photos4
+public_path: src/photos4
 front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
