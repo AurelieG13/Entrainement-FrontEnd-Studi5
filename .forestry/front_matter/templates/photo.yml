@@ -30,6 +30,10 @@ fields:
       format: markdown
   label: Description
   description: Description
+- name: galeriegrossesse
+  type: image_gallery
+  config: {}
+  label: galerieGrossesse
 pages:
 - src/photos4/testdossphotos4.md
 - src/photos4/testphoto5.md
