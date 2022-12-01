@@ -20,5 +20,15 @@ fields:
   hidden: true
   label: tags
   description: tags<br>
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Description
 pages:
 - images/photos3/testnew10112.md
