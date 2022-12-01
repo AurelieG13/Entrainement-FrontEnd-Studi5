@@ -25,10 +25,11 @@ layout: layout.njk
             <img src="#" alt="photo">
             {# {% include collections.photo%} #}
         </div>
-
-        {# {% for photo in collections.photo %}
-            <div>{{ photo.upload_img }}</div> 
-        {% endfor %} #}
+        <ul>TEST
+        {% for post in collections.photos %}
+            <li>{{ post.data.title }}</li> 
+        {% endfor %}
+        </ul>
 
 {# <img src="{{ photo.url | url }}">{{ photo.data.title }}</img> #}
 
