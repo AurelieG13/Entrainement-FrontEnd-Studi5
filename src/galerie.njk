@@ -18,18 +18,19 @@ layout: layout.njk
     {# Section 2 - List  #}
     <section class="container-list">
         <div class="container-title-list">
-            <a href="#" class="list-button">Voir toutes les photos </a>
+            <a href="#" class="list-button">Voir toutes les photos</a>
         </div>
 
         <div class="container-photo-list">
             <img src="#" alt="photo">
+            {# {% include collections.photo%} #}
         </div>
-        
-        {% for post in collections.photo %}
-            <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-        {% endfor %}
+{# 
+        {% for photo in collections.photo %}
+            <div>{{ photo.upload_img }}</div> 
+        {% endfor %} #}
 
-
+{# <img src="{{ photo.url | url }}">{{ photo.data.title }}</img> #}
 
     </section>
 
@@ -38,6 +39,8 @@ layout: layout.njk
         <div class="container-title-categories">
             <a href="#" class="categories-button">Catégories les plus recherchées</a>
         </div>
+
+        
 
         <div class="container-categories">
             <div class="card">
@@ -48,6 +51,14 @@ layout: layout.njk
                     <a href="#" class="btn-card bgMenuBlue">Voir les photos</a>
                 </div>
             </div>       
+            {# {% macro card(title, content) %}
+                <div class="card">
+                <h2>{{ title }}</h2>
+                <p>{{ content }}</p>
+                </div>
+        {% endmacro %}
+
+        {{ card('My Module', 'Lorem ipsum whatever.') }} #}
         </div>
 
 
