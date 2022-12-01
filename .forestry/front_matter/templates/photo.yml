@@ -20,3 +20,5 @@ fields:
   hidden: true
   label: tags
   description: tags<br>
+pages:
+- images/photos3/testnew10112.md
